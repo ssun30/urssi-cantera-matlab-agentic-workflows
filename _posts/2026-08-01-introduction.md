@@ -7,9 +7,6 @@ author: "Su Sun"
 tags: [urssi, cantera, matlab, agentic-ai, scientific-software]
 ---
 
-*This is the first of three posts documenting my 2026 URSSI Fellowship project.
-It introduces what the project will do and why it matters.*
-
 ## The problem hiding in plain sight
 
 Most scientific software you use is not written in the language you call it from.
@@ -18,7 +15,7 @@ library does the real work. That translation layer — the **interface** — is 
 makes powerful compiled libraries usable from high-level languages like Python,
 MATLAB, R, or Julia.
 
-Interfaces are quietly essential, and quietly fragile. Every time the underlying
+Interfaces are quietly essential, and equally fragile. Every time the underlying
 library changes its API, or the language's tooling for generating bindings
 shifts, or a packaging system updates, the interface can drift out of sync. The
 result is familiar to anyone who maintains scientific software: stale
@@ -27,16 +24,17 @@ platform but not another. Keeping an interface healthy is labor-intensive,
 repetitive, and easy to get wrong — exactly the kind of work that rarely gets
 funded and quietly falls behind.
 
-## Why Cantera, and why me
+## Why Cantera
 
-[Cantera](https://cantera.org) is a widely used open-source toolkit for chemical
+[**Cantera**](https://cantera.org) is a widely used open-source toolkit for chemical
 kinetics, thermodynamics, and species transport, with applications across
-combustion, electrochemistry, and atmospheric chemistry. It is written in C++ and
-exposes its functionality through interfaces to Python, MATLAB, C, and Fortran.
+combustion, catalysis, electrochemistry, and atmospheric chemistry.
+It is written in C++ and exposes its functionality through interfaces to
+Python, MATLAB, C, and Fortran.
 Cantera 3.2.0 alone saw over 18,600 conda-forge downloads in six months — this is
 software that a lot of people rely on.
 
-I maintain the **Cantera MATLAB interface**. Over the past three years I have
+I maintain the [**Cantera MATLAB interface**](https://cantera.org/stable/matlab/index.html). Over the past three years I have
 rebuilt the MATLAB toolbox through *two* major architectural overhauls, forced by
 changes in MATLAB's interface-generation technology and the sunsetting of legacy
 features. Both transitions introduced breaking changes and demanded a great deal
@@ -60,7 +58,7 @@ correct enough to ship to thousands of users. The interesting research is not
 "can AI write a wrapper?" but "when can we *trust* it to, and how do we catch it
 when we can't?"
 
-## What I'll actually do
+## The game plan
 
 Over six months, the project pursues four objectives:
 
@@ -80,18 +78,6 @@ Over six months, the project pursues four objectives:
    workflow template, a validation checklist, example CI/test components, a
    case-study report, a failure-mode analysis, and a sketch of how this transfers
    to other multi-language interfaces.
-
-## Success looks like...
-
-I'm holding myself to concrete targets: an end-to-end workflow spanning six
-maintenance stages (wrappers, documentation, examples, testing, packaging,
-release); **at least 95%** passing unit tests on the AI-assisted subset; **100%
-crash-free** execution for every AI-assisted example that ships; and a careful
-analysis of **at least three** high-impact failure modes — the ways this approach
-goes wrong, documented honestly.
-
-That last point is the one I care most about. A workflow that works is useful. A
-workflow that also tells you *where it breaks* is trustworthy.
 
 ## Beyond Cantera
 

@@ -9,9 +9,8 @@ theme: minima
 url: "https://ssun30.github.io"
 baseurl: "/urssi-cantera-matlab-agentic-workflows"
 
-author:
-  name: "Su Sun"          # TODO: confirm display name
-  email: sun.su@northeastern.edu
+author: Su Sun
+email: sun.su@northeastern.edu
 
 minima:
   social_links:
@@ -19,11 +18,16 @@ minima:
 
 # Show these pages in the site header nav
 header_pages:
-  - about.md
+  - blog.md
   - timeline.md
+  - about.md
 
 # Blog posts live in _posts/ and are listed automatically on the home page
 show_excerpts: true
+
+# Render posts dated in the future (the Introduction post is dated Aug 1, 2026).
+# Without this, Jekyll silently skips any post whose date is after "today".
+future: true
 
 plugins:
   - jekyll-feed
