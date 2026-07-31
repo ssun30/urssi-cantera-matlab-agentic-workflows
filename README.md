@@ -1,7 +1,10 @@
 # Reliable Agentic Workflows for Sustainable Multi-Language Scientific Software Interfaces
 
+[![Live site](https://img.shields.io/badge/%F0%9F%8C%90_Live_site-ssun30.github.io-brightgreen)](https://ssun30.github.io/urssi-cantera-matlab-agentic-workflows/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![URSSI Fellowship](https://img.shields.io/badge/URSSI-Fellowship%202026-blue)](https://urssi.us/)
+
+**🌐 Project website: <https://ssun30.github.io/urssi-cantera-matlab-agentic-workflows/>**
 
 A **URSSI Fellowship** project (2026 cohort) investigating whether **agentic AI
 workflows** can reliably maintain and sustain **cross-language interfaces** for
@@ -32,17 +35,6 @@ manual experience is the baseline for asking a sharper question:
 > of scientific software interfaces, and what recurring failure modes require
 > automated validation, human review, or both?**
 
-## Scope
-
-The workflow scope covers the user-facing MATLAB toolbox, its documentation and
-examples, and the higher-level wrapper layer that translates lower-level Cantera
-capabilities into MATLAB-oriented syntax.
-
-```
-[ MATLAB Toolbox (user-facing) ]   <-->   [ Higher-level MATLAB wrapper ]   <-->   [ Lower-level Cantera API ]   <-->   [ Cantera core library (C++) ]
-[ Documentation + examples     ]  ------^
-```
-
 ## Objectives
 
 - **O1 — Map the maintenance workflow.** Document how upstream library and
@@ -57,21 +49,6 @@ capabilities into MATLAB-oriented syntax.
 - **O4 — Produce reusable community artifacts.** A workflow template, validation
   checklist, example CI/test components, case-study report, failure-mode
   analysis, and a cross-domain transferability sketch.
-
-## Repository contents
-
-| Path | Description |
-|------|-------------|
-| [`timeline.md`](timeline.md) | Six-month project timeline mapped to deliverables |
-| [`_posts/`](_posts/) | Blog posts (Introduction, Update, Conclusion) |
-| [`about.md`](about.md) | About the author |
-| [`docs/`](docs/) | Project artifacts: workflow templates, checklists, failure-mode analysis, final report |
-| [`_config.yml`](_config.yml) | GitHub Pages (Jekyll) site configuration |
-
-## Project website
-
-Once GitHub Pages is enabled, the site renders at:
-**https://ssun30.github.io/urssi-cantera-matlab-agentic-workflows/**
 
 ## Related repositories
 
