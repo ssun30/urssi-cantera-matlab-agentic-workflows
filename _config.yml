@@ -1,0 +1,38 @@
+title: Reliable Agentic Workflows for Sustainable Multi-Language Scientific Software Interfaces
+description: >-
+  A URSSI Fellowship project investigating whether agentic AI workflows can
+  reliably maintain and sustain cross-language interfaces for scientific
+  software, using the Cantera MATLAB interface as a case study.
+
+# --- GitHub Pages / Jekyll ---
+theme: minima
+url: "https://ssun30.github.io"
+baseurl: "/urssi-cantera-matlab-agentic-workflows"
+
+author:
+  name: "Su Sun"          # TODO: confirm display name
+  email: sun.su@northeastern.edu
+
+minima:
+  social_links:
+    github: ssun30
+
+# Show these pages in the site header nav
+header_pages:
+  - about.md
+  - timeline.md
+
+# Blog posts live in _posts/ and are listed automatically on the home page
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Files that should not be copied into the built site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
